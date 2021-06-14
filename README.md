@@ -1,34 +1,56 @@
-## Nama   : Agung Adlhianto
-## NIM    : 311910570
-## Kelas  : TI. 19. B2
+# CodeIgniter 4 Framework
 
-### 1. Menginstal extension secara manual menggunakan xampp
-![extension apache](https://user-images.githubusercontent.com/56548203/121900221-65dc9f00-cd4f-11eb-8a41-d4a0c3b98f5a.JPG)
-![0](https://user-images.githubusercontent.com/56548203/121900581-c53aaf00-cd4f-11eb-9d48-608f7cdc8ad8.JPG)
-### 2. Jalankan CLI dengan perintah php spark
-![cmd A](https://user-images.githubusercontent.com/56548203/121900773-fe731f00-cd4f-11eb-846d-8e820ca18d86.JPG)
-### 3. Lakukan pengetesan pengujian error untuk dijalankan dibrowser dengan menghilangkan tanda ; home.php
-![3](https://user-images.githubusercontent.com/56548203/121901820-f10a6480-cd50-11eb-89a8-919547c7bdca.JPG)
-![C](https://user-images.githubusercontent.com/56548203/121901825-f2d42800-cd50-11eb-85cc-7e942e7b58cf.JPG)
-### 4. Menambahkan source code di routes pada file routes.php
-![D3](https://user-images.githubusercontent.com/56548203/121902106-3464d300-cd51-11eb-89a6-25d7f8ae38bb.JPG)
-![cmd B](https://user-images.githubusercontent.com/56548203/121902184-49d9fd00-cd51-11eb-8736-627419664adf.JPG)
-### 5. Menambahkan Controller about
-![B1](https://user-images.githubusercontent.com/56548203/121902558-a0dfd200-cd51-11eb-8ad0-e0fe11c3ae2b.JPG)
-![A](https://user-images.githubusercontent.com/56548203/121902592-a89f7680-cd51-11eb-9bb1-7ae5256d8ea8.JPG)
-### 6. Menambahkan Cotroller page baru
-![b2](https://user-images.githubusercontent.com/56548203/121902735-ccfb5300-cd51-11eb-8d9e-8c8f949dd892.JPG)
-### 7. membuat file baru about.php lalu di save di app/view/about.php
-![About](https://user-images.githubusercontent.com/56548203/121903455-865a2880-cd52-11eb-961f-7baeb6ae8589.JPG)
-![page](https://user-images.githubusercontent.com/56548203/121903594-abe73200-cd52-11eb-890d-0f2e8bd7c1b3.JPG)
-![B](https://user-images.githubusercontent.com/56548203/121903615-af7ab900-cd52-11eb-9f38-da506d3abc5f.JPG)
-### 8. Kemudian buat folder template pada direktori view kemudian buat file header.php dan footer.php
-#### header
-![header](https://user-images.githubusercontent.com/56548203/121903849-e781fc00-cd52-11eb-9f18-d8c336cd2a06.JPG)
-#### Footer 
-![footer](https://user-images.githubusercontent.com/56548203/121903987-02ed0700-cd53-11eb-9e67-f02aa28f8926.JPG)
-![final](https://user-images.githubusercontent.com/56548203/121904326-48113900-cd53-11eb-85ea-368b193a2fb0.JPG)
+## What is CodeIgniter?
+
+CodeIgniter is a PHP full-stack web framework that is light, fast, flexible and secure.
+More information can be found at the [official site](http://codeigniter.com).
+
+This repository holds the distributable version of the framework,
+including the user guide. It has been built from the
+[development repository](https://github.com/codeigniter4/CodeIgniter4).
+
+More information about the plans for version 4 can be found in [the announcement](http://forum.codeigniter.com/thread-62615.html) on the forums.
+
+The user guide corresponding to this version of the framework can be found
+[here](https://codeigniter4.github.io/userguide/).
 
 
+## Important Change with index.php
 
+`index.php` is no longer in the root of the project! It has been moved inside the *public* folder,
+for better security and separation of components.
 
+This means that you should configure your web server to "point" to your project's *public* folder, and
+not to the project root. A better practice would be to configure a virtual host to point there. A poor practice would be to point your web server to the project root and expect to enter *public/...*, as the rest of your logic and the
+framework are exposed.
+
+**Please** read the user guide for a better explanation of how CI4 works!
+
+## Repository Management
+
+We use Github issues, in our main repository, to track **BUGS** and to track approved **DEVELOPMENT** work packages.
+We use our [forum](http://forum.codeigniter.com) to provide SUPPORT and to discuss
+FEATURE REQUESTS.
+
+This repository is a "distribution" one, built by our release preparation script.
+Problems with it can be raised on our forum, or as issues in the main repository.
+
+## Contributing
+
+We welcome contributions from the community.
+
+Please read the [*Contributing to CodeIgniter*](https://github.com/codeigniter4/CodeIgniter4/blob/develop/CONTRIBUTING.md) section in the development repository.
+
+## Server Requirements
+
+PHP version 7.3 or higher is required, with the following extensions installed:
+
+- [intl](http://php.net/manual/en/intl.requirements.php)
+- [libcurl](http://php.net/manual/en/curl.requirements.php) if you plan to use the HTTP\CURLRequest library
+
+Additionally, make sure that the following extensions are enabled in your PHP:
+
+- json (enabled by default - don't turn it off)
+- [mbstring](http://php.net/manual/en/mbstring.installation.php)
+- [mysqlnd](http://php.net/manual/en/mysqlnd.install.php)
+- xml (enabled by default - don't turn it off)
